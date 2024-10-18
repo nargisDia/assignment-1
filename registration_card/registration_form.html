@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <div class="registration-form">
+            <div class="registration-form__container">
+                <h2 class="registration-form__heading" id="formTitle">
+                    Registration
+                </h2>
+                <form class="form" id="registrationForm">
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label class="form__label" for="fullname">
+                                Full Name
+                            </label>
+                            <input
+                                type="text"
+                                id="fullname"
+                                name="fullname"
+                                class="form__input"
+                                placeholder="Enter your full name"
+                            />
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="username">
+                                Username
+                            </label>
+                            <input
+                                class="form__input"
+                                type="text"
+                                id="username"
+                                name="username"
+                                placeholder="Enter your username"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label class="form__label" for="email">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form__input"
+                                placeholder="Enter your email address"
+                            />
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="phoneNumber">
+                                Phone Number
+                            </label>
+                            <input
+                                type="tel"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                class="form__input"
+                                placeholder="Enter your phone number"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label class="form__label" for="password">
+                                Password
+                            </label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                class="form__input"
+                                placeholder="Enter your password"
+                            />
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="confirmPassword">
+                                Confirm Password
+                            </label>
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                class="form__input"
+                                placeholder="Confirm your password"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label">Gender</label>
+                        <div class="form__radio-group">
+                            <label class="form__radio-option" for="male">
+                                <input
+                                    id="male"
+                                    type="radio"
+                                    name="gender"
+                                    value="male"
+                                    class="form__radio"
+                                />
+                                Male
+                            </label>
+                            <label class="form__radio-option" for="female">
+                                <input
+                                    id="female"
+                                    type="radio"
+                                    name="gender"
+                                    value="female"
+                                    class="form__radio"
+                                />
+                                Female
+                            </label>
+                            <label class="form__radio-option" for="other">
+                                <input
+                                    id="other"
+                                    type="radio"
+                                    name="gender"
+                                    value="other"
+                                    class="form__radio"
+                                />
+                                Other
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form__actions">
+                        <button type="reset" class="btn btn--secondary">
+                            Cancel
+                        </button>
+                        <button type="submit" class="btn btn--primary">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
